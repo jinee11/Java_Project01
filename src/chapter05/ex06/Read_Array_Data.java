@@ -32,7 +32,7 @@ public class Read_Array_Data {
 		
 		System.out.println("==================================");
 		
-		//3. 2차원 배열에서  이즁 for문을 사용해서 값을 넣기
+		//3. 2차원 배열에서 이중 for문을 사용해서 값을 넣기
 		int[][] arr3 = new int[][] {{1,2,3},{4,5,6}};
 		
 		for(int i = 0; i < arr3.length; i++) {	//i:행의 인덱스(방)번호 /arr3.length:행의 갯수

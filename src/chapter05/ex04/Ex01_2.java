@@ -6,18 +6,12 @@ public class Ex01_2 {
 
 	public static void main(String[] args) {
 		// <문제>
-		
-
-		
-			
-		
 		Scanner sc = new Scanner(System.in);
 		int a; //선택문
 		int i; //방크기
 		
 		do {
 		
-			
 		System.out.println("=========================");
 		System.out.println("1.인풋 값을 받아서 방의 크기 지정하고 7의 배수와 8의 배수 저장후 출력");
 		System.out.println("2.인풋 값을 받아서 방의 크기 지정하고 1씩 증가하도록 값을 넣는데 4의 배수만 제외하고 저장후 출력");
@@ -26,7 +20,6 @@ public class Ex01_2 {
 		System.out.println("=========================");
 		System.out.println("번호를 선택하세요>>");
 		a = sc.nextInt();
-		
 		
 		if (a == 1) {
 			System.out.println("방의 갯수를 지정하세요");
@@ -69,17 +62,7 @@ public class Ex01_2 {
 		}else {
 			
 		}
-		
-		
-		
-		
-		
-		
-		
-		
 		} while (true);
-		
-		
  sc.close();
 	}
 

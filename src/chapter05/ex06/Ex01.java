@@ -39,7 +39,7 @@ public class Ex01 {
 		}
 		
 		
-		//3. Arrays.toString()를 사용해서 출력 : 1차원 배열의 값을 출력
+		//3. Arrays.toString()를 사용해서 출력 : ! 1차원 배열의 값을 출력
 		System.out.println("== Arrays.toString()문을 사용해서 출력 ==");
 		for (int[] arr3 : arr1) { //arr3에 배열의 행 자체를 가져오는것
 			System.out.println(Arrays.toString(arr3));
