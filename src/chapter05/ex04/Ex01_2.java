@@ -7,10 +7,12 @@ public class Ex01_2 {
 	public static void main(String[] args) {
 		// <문제>
 		Scanner sc = new Scanner(System.in);
-		int a; //선택문
-		int i; //방크기
 		
-		do {
+		int[] arr1; //배열변수
+		int n ;//선택지
+		int idx;//방크기
+		
+		while (true) {
 		
 		System.out.println("=========================");
 		System.out.println("1.인풋 값을 받아서 방의 크기 지정하고 7의 배수와 8의 배수 저장후 출력");
@@ -18,52 +20,76 @@ public class Ex01_2 {
 		System.out.println("3.인풋 값을 받아서 방의 크기 지정하고 3의 배수만 저장하는데 그중 6의 배수는 빼고 출력");
 		System.out.println("4.프로그램 종료");
 		System.out.println("=========================");
-		System.out.println("번호를 선택하세요>>");
-		a = sc.nextInt();
 		
-		if (a == 1) {
-			System.out.println("방의 갯수를 지정하세요");
-			i = sc.nextInt();
-			int[] arr1= new int[i];
+		System.out.println("번호를 선택하세요");
+		n = sc.nextInt();
+		
+		if(n==1) {
+			System.out.println("방 크기를 지정하세요");
+			idx = sc.nextInt();
+			arr1 = new int[idx];
 			
-			for (int x = 0, c = 1; x < arr1.length ; x++,c++) {
-				if(c%7 == 0 || c%8 == 0) {
-					arr1[x] = c; //x는 방 번호, c는 배수 값
-					System.out.print(arr1[x]+" ");
+			int i=0 ;//방번호
+			int j ;//배수
+			
+			for (j=1; ;j++) {
+				if(j%7==0||j%8==0) {
+					arr1[i]=j;
+					i++;
+				}
+				if (i==idx) {
+					break;
 				}
 			}
-		}else if(a==2) {
-			System.out.println("방의 크기를 지정하세요");
-			i = sc.nextInt();
-			int[] arr2= new int[i];
-			
-			for (int x = 0, c = 1; x < arr2.length ; x++, c++ ) {
-				if (c%4 != 0) {
-					arr2[x]=c;
-					System.out.print(arr2[x]+" ");
-				}
+			for (i = 0; i < arr1.length ; i++) {
+				System.out.print(arr1[i]+" ");
 			}
-			
-		}else if(a==3) {
-			System.out.println("방의 크기를 지정하세요");
-			i = sc.nextInt();
-			int[] arr3= new int[i];
-			
-			for(int x = 0, c =3; x < arr3.length ; x++, c+=3) {
-				if (c%6 != 0 ) {
-					arr3[x]=c;
-					System.out.print(arr3[x]+" ");
-				}
-			}
-			
-		}else if(a==4) {
-			System.out.println("프로그램 종료");
-			break;
-		}else {
-			
+			System.out.println();
 		}
-		} while (true);
- sc.close();
+		
+		if(n==2) {
+			System.out.println("방크기를 지정하세요");
+			idx = sc.nextInt();
+			
+			arr1 = new int[idx];
+			int i =0;
+			int j = 1;
+			for(i = 0 ; ; i++) {
+				if(j%4==0) {
+					continue;
+				}
+				arr1[i]=j;
+				i++;
+				if(i==idx) {
+					break;
+				}
+			}
+			for(i=0; i< arr1.length ; i++) {
+				System.out.println(arr1[i]+" ");
+			}
+		}
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		}
 	}
 
 }
