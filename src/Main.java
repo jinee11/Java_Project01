@@ -7,21 +7,25 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int a,b,c;
-		a = sc.nextInt();
-		b = sc.nextInt();
-		c = sc.nextInt();
+		int h, m;
 		
-		int sum1 = (a+b)%c;
-		int sum2 = ((a%c)+(b%c))%c;
-		int sum3 = (a*b)%c;
-		int sum4 = ((a%c)*(b%c))*c;
+		h = sc.nextInt();
+		m = sc.nextInt();
 		
-		System.out.println(sum1);
-		System.out.println(sum2);
-		System.out.println(sum3);
-		System.out.println(sum4);
-
+		if (m <45) {
+			if(h < 0) {
+				
+			}
+			else {
+				
+			}
+		}
+		else {
+			System.out.print(h);
+			System.out.println(" "+(m-m));
+		}
+	
+	
 	}
 
 }
